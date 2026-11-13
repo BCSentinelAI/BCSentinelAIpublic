@@ -7,3 +7,4 @@ Cuando uno de esos casos se haga publico, compartiremos los datos originales sel
 | Fecha del anclaje (UTC) | Total de sellos | Ultimo chain_hash |
 |---|---|---|
 | 2026-11-03 10:50 UTC | 1 | `8327850276fa5f5fbcdc87d06a91565bf66460cece0bdfd1949fca25bc432836` |
+| 2026-11-13 13:29 UTC | 2 | `2a0e7f951c702951c84f366675f830200c478d4b155172a33130b6fabc3380ca` |
