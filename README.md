@@ -7,6 +7,8 @@
 
 **Qué es BCSentinel, en una frase.** Un sistema de detección y alerta temprana de formación de entidades cripto (protocolos, DAOs, lanzamientos de token) a partir de patrones de comportamiento on-chain, antes de que esa formación sea pública. **BCSentinel detecta y alerta — no es una recomendación de inversión ni asesoramiento financiero, no indica dónde invertir ni si se debe invertir.**
 
+**Caso de estudio técnico →** [CASE_STUDY.md](CASE_STUDY.md): el ciclo completo en cinco etapas, las decisiones de diseño, los retos resueltos y los resultados agregados sobre más de 220 casos confirmados.
+
 ---
 
 ## 1. Qué responde `investigate_wallet_v7.py`
@@ -47,3 +49,6 @@ Un backtest retrospectivo sobre un dataset histórico interno de 186 casos etiqu
 ---
 
 *Este documento es la versión pública y deliberadamente incompleta de la documentación técnica de `investigate_wallet_v7.py`. La versión completa, con fórmulas, pesos, umbrales y código fuente, es información confidencial de BCSentinel y no se publica.*
+
+---
+*Autor: Ivan Alonso, fundador de BCSentinel AI (EMERGE) · [GitHub](https://github.com/ivanalonso-dev) · [LinkedIn](https://www.linkedin.com/in/ivanalonsodev) · [X](https://x.com/ivanalonsodev) · [bcsentinel.ai](https://bcsentinel.ai)*
