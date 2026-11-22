@@ -6,7 +6,7 @@ BCSentinel AI is an early-intelligence system for blockchain protocols: it detec
 
 ## The problem
 
-When a new team starts coordinating on-chain — several wallets that start moving together, funding from the same source, or sharing infrastructure — that coordination leaves a trace long before the project announces anything publicly: before a funding round, before a launch, before the team identifies itself. That window of time, measured across already-confirmed real cases, has a median of 21.5 days between detection and the moment the information becomes public — enough for someone who needs to act (competitive analysis, capital allocation, due diligence) to do so with a real advantage instead of reacting after the fact.
+When a new team starts coordinating on-chain — several wallets that start moving together, funding from the same source, or sharing infrastructure — that coordination leaves a trace long before the project announces anything publicly: before a funding round, before a launch, before the team identifies itself. That window of time, measured across already-confirmed real cases, has a median of 23 days between detection and the moment the information becomes public — enough for someone who needs to act (competitive analysis, capital allocation, due diligence) to do so with a real advantage instead of reacting after the fact.
 
 ## System architecture
 
