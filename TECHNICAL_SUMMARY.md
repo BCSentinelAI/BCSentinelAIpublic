@@ -42,7 +42,7 @@ El sistema documenta internamente sus propios puntos débiles conocidos en vez d
 
 ## 5. Validación empírica
 
-Un backtest retrospectivo sobre un dataset histórico interno de 186 casos etiquetados mostró que el sistema clasifica correctamente como formación real el 49% de los casos (92/186), con una metodología transparente de exclusión de casos ambiguos (ningún caso se clasifica inventando datos que no existen). Esta cifra describe comportamiento retrospectivo sobre datos ya conocidos, no una tasa de precisión validada estadísticamente contra resultados futuros ni una tasa de éxito comercial confirmada por clientes.
+Una auditoría completa del historial de etiquetado interno de BCSentinel (196 casos reales investigados) encontró 142 formaciones institucionales reales confirmadas, 20 casos correctamente descartados y 32 todavía pendientes de revisión humana. De los 125 casos en los que el Confidence Engine automático registró una clasificación bruta antes de la revisión humana, esa puntuación bruta coincidió con el veredicto final confirmado por humano solo en el 39% de los casos (49/125) — en el otro 61%, un revisor humano corrigió la lectura inicial del motor, generalmente detectando una formación real que la puntuación automática había subestimado. Esta cifra se publica precisamente porque es la evidencia de por qué el sistema nunca confirma un hallazgo de forma automática: la puntuación automática por sí sola se equivoca más a menudo de lo que acierta, y se trata así por diseño, no como un parche posterior. Metodología completa y ejemplos con nombre: `HISTORICAL_VALIDATION.md` en el repositorio público.
 
 ---
 
