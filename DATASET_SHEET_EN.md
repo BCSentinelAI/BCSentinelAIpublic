@@ -1,6 +1,10 @@
 # BCSentinel AI Historical Formation Library · Dataset sheet
 
+<<<<<<< HEAD
 **Provider:** EMERGE (Barcelona, Spain) · **Product:** BCSentinel AI · **Version:** 1.1, November 2026
+=======
+**Provider:** EMERGE (Barcelona, Spain) · **Product:** BCSentinel AI · **Version:** 1.0, November 2026
+>>>>>>> 9b4a33da8fa89893ff00da6316cada375f90370a
 **Contact:** info@bcsentinel.ai · [bcsentinel.ai](https://bcsentinel.ai)
 
 ---
@@ -27,10 +31,18 @@ Institutional formations usually leave an on-chain trace well before any announc
 | | |
 | --- | --- |
 | Chain | Ethereum L1 |
+<<<<<<< HEAD
 | Addresses audited in-house | 187 (185 real cases + 2 empty placeholder keys, documented for transparency) |
 | Resolved and strictly measurable (exact T1 and T3, public source) | 50 (35 formations, 15 risk events), of which 38 were detected before becoming public |
 | Documented rejections (not a formation) | 19 |
 | Lead time on the 38 early detections | median 98.5 days; 25th–75th percentile 23.3–400.3 days |
+=======
+| Cases audited in-house | 196 |
+| Confirmed institutional formations | 142 |
+| Resolved and measurable (first signal and public date recorded) | 57, of which 43 were detected before becoming public |
+| Documented rejections (not a formation) | 20 |
+| Lead time on the 43 early detections | median 23 days; 25th–75th percentile 1–208.5 days |
+>>>>>>> 9b4a33da8fa89893ff00da6316cada375f90370a
 | Update frequency | As cases are resolved |
 
 Figures as of November 2026, from the audit published in [HISTORICAL_VALIDATION.md](HISTORICAL_VALIDATION.md).
