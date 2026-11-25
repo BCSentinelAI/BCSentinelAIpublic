@@ -7,7 +7,7 @@
 
 **Qué es BCSentinel, en una frase.** Un sistema de detección y alerta temprana de formación de entidades cripto (protocolos, DAOs, lanzamientos de token) a partir de patrones de comportamiento on-chain, antes de que esa formación sea pública. **BCSentinel detecta y alerta — no es una recomendación de inversión ni asesoramiento financiero, no indica dónde invertir ni si se debe invertir.**
 
-**Caso de estudio técnico →** [CASE_STUDY.md](CASE_STUDY.md): el ciclo completo en cinco etapas, las decisiones de diseño, los retos resueltos y los resultados agregados sobre 196 casos históricos auditados.
+**Caso de estudio técnico →** [CASE_STUDY.md](CASE_STUDY.md): el ciclo completo en cinco etapas, las decisiones de diseño, los retos resueltos y los resultados agregados sobre 187 casos históricos auditados.
 
 ---
 
@@ -44,7 +44,7 @@ El sistema documenta internamente sus propios puntos débiles conocidos en vez d
 
 ## 5. Validación empírica
 
-Una auditoría completa del historial de etiquetado interno de BCSentinel (196 casos reales investigados) encontró 142 formaciones institucionales reales confirmadas, 20 casos correctamente descartados y 32 todavía pendientes de revisión humana. De los 125 casos en los que el Confidence Engine automático registró una clasificación bruta antes de la revisión humana, esa puntuación bruta coincidió con el veredicto final confirmado por humano solo en el 39% de los casos (49/125) — en el otro 61%, un revisor humano corrigió la lectura inicial del motor, generalmente detectando una formación real que la puntuación automática había subestimado. Esta cifra se publica precisamente porque es la evidencia de por qué el sistema nunca confirma un hallazgo de forma automática. Metodología completa y ejemplos con nombre: `HISTORICAL_VALIDATION.md`.
+Una auditoría completa del historial de etiquetado interno de BCSentinel (187 direcciones, 185 casos reales investigados) encontró 50 casos medibles con fecha exacta y fuente pública (35 formaciones, 15 eventos de riesgo), 19 casos correctamente descartados por el propio sistema y el resto con identificación parcial, pendiente de revisión final, o un patrón detectado sin proyecto aún identificado — ver `HISTORICAL_VALIDATION.md` para el desglose completo. De los 125 casos en los que el Confidence Engine automático registró una clasificación bruta antes de la revisión humana, esa puntuación bruta coincidió con el veredicto final confirmado por humano solo en el 39% de los casos (49/125) — en el otro 61%, un revisor humano corrigió la lectura inicial del motor, generalmente detectando una formación real que la puntuación automática había subestimado. Esta cifra se publica precisamente porque es la evidencia de por qué el sistema nunca confirma un hallazgo de forma automática. Metodología completa y ejemplos con nombre: `HISTORICAL_VALIDATION.md`.
 
 ---
 

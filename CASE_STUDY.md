@@ -6,7 +6,7 @@ BCSentinel AI es un sistema de inteligencia temprana sobre protocolos blockchain
 
 ## El problema
 
-Cuando un equipo nuevo empieza a coordinarse on-chain —varias wallets que empiezan a moverse juntas, financiarse desde el mismo origen o compartir infraestructura— esa coordinación deja rastro mucho antes de que el proyecto anuncie nada públicamente: antes de una ronda de financiación, antes de un lanzamiento, antes de que el equipo se identifique. Ese margen de tiempo, medido sobre casos reales ya confirmados, tiene una mediana de 23 días entre la detección y el momento en que la información se vuelve pública — suficiente para que alguien que necesita actuar (análisis competitivo, asignación de capital, debida diligencia) lo haga con ventaja real en vez de reaccionar después del hecho.
+Cuando un equipo nuevo empieza a coordinarse on-chain —varias wallets que empiezan a moverse juntas, financiarse desde el mismo origen o compartir infraestructura— esa coordinación deja rastro mucho antes de que el proyecto anuncie nada públicamente: antes de una ronda de financiación, antes de un lanzamiento, antes de que el equipo se identifique. Ese margen de tiempo, medido sobre casos reales ya confirmados, tiene una mediana de 98,5 días entre la detección y el momento en que la información se vuelve pública — suficiente para que alguien que necesita actuar (análisis competitivo, asignación de capital, debida diligencia) lo haga con ventaja real en vez de reaccionar después del hecho.
 
 ## Arquitectura del sistema
 
@@ -28,19 +28,19 @@ La única rama que no vuelve a la vigilancia automática es la de revisión huma
 
 ## Resultados reales
 
-De 196 casos reales auditados en el historial de etiquetado de BCSentinel, 142 son formaciones institucionales reales confirmadas. De esas, 57 tienen registradas tanto la fecha de primera señal como la fecha de visibilidad pública — lo necesario para medir la ventaja de forma honesta. 43 de esas 57 se detectaron antes de que la formación fuera pública (ventaja real); las otras 14 se identificaron correctamente como formaciones reales, pero solo después de ser ya públicas — un patrón documentado y esperado (una wallet operadora de una entidad ya pública, no una señal de fundación — ver `HISTORICAL_VALIDATION.md` para el caso concreto). Solo las 43 detecciones tempranas reales alimentan la siguiente tabla; sin nombres de cliente, wallet ni caso — solo la distribución agregada:
+La librería histórica de BCSentinel reúne 187 direcciones auditadas una a una (185 casos reales investigados, más 2 entradas vacías de la propia clave maestra, documentadas por transparencia). De las 185, 50 cumplen el criterio estricto para medir ventaja real —fecha de primera señal on-chain (T1) y fecha de visibilidad pública (T3), ambas exactas y respaldadas por una fuente pública verificable—: 35 formaciones institucionales y 15 eventos de riesgo (incidentes de seguridad, salidas irregulares). De esos 50, 38 se detectaron con un día o más de antelación (ventaja real); los otros 12 se detectaron el mismo día o después de que el hecho ya era público — un patrón documentado y esperado (una wallet operadora de una entidad ya pública, no una señal de fundación — ver `HISTORICAL_VALIDATION.md` para el caso concreto). Solo esos 38 alimentan la siguiente tabla; sin nombres de cliente, wallet ni caso — solo la distribución agregada:
 
 | Métrica (días de ventaja) | Valor |
 | --- | --- |
-| Mediana | 23 |
-| Percentil 25 | 1 |
-| Percentil 75 | 208,5 |
-| Mínimo | 0 |
+| Mediana | 98,5 |
+| Percentil 25 | 23,3 |
+| Percentil 75 | 400,3 |
+| Mínimo | 1 |
 | Máximo | 1.651 |
 
-La **media** es de unos **178 días** porque un pequeño número de casos detectados muy pronto (hasta 1.651 días antes) tira de ella hacia arriba; la **mediana, 23 días**, es la ventaja típica de un caso. Por eso aquí se muestra la distribución completa y no una sola cifra.
+La **media** es de unos **285 días** porque un pequeño número de casos detectados muy pronto (hasta 1.651 días antes) tira de ella hacia arriba; la **mediana, 98,5 días**, es la ventaja típica de un caso. Por eso aquí se muestra la distribución completa y no una sola cifra. Separando por tipo: la mediana es de 98 días en formaciones (27 de 35 con ventaja) y de 209 días en eventos de riesgo (11 de 15 con ventaja).
 
-Ejemplos con nombre, verificables de forma independiente — Rarible (648 días), Across Protocol (496 días), Synthetix (276 días), Keep3r Network (281 días), Morpho (109 días) — además de casos donde la misma metodología detectó fraude antes de que fuera de conocimiento público, están en [HISTORICAL_VALIDATION.md](HISTORICAL_VALIDATION.md), con la metodología completa y reproducible.
+Ejemplos con nombre, verificables de forma independiente — ENS (1.651 días), Safe (826 días), Rarible (646 días), Across Protocol (496 días), Keep3r Network (281 días) — además de casos donde la misma metodología detectó riesgo antes de que fuera de conocimiento público (por ejemplo, Multichain, 843 días antes de su exploit), están en [HISTORICAL_VALIDATION.md](HISTORICAL_VALIDATION.md), con la metodología completa y reproducible.
 
 Los casos se agrupan en tres patrones distintos de velocidad, cada uno con una implicación operativa distinta para quién recibe la alerta:
 

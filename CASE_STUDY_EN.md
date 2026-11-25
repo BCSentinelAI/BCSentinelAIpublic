@@ -6,7 +6,7 @@ BCSentinel AI is an early-intelligence system for blockchain protocols: it detec
 
 ## The problem
 
-When a new team starts coordinating on-chain — several wallets that start moving together, funding from the same source, or sharing infrastructure — that coordination leaves a trace long before the project announces anything publicly: before a funding round, before a launch, before the team identifies itself. That window of time, measured across already-confirmed real cases, has a median of 21.5 days between detection and the moment the information becomes public — enough for someone who needs to act (competitive analysis, capital allocation, due diligence) to do so with a real advantage instead of reacting after the fact.
+When a new team starts coordinating on-chain — several wallets that start moving together, funding from the same source, or sharing infrastructure — that coordination leaves a trace long before the project announces anything publicly: before a funding round, before a launch, before the team identifies itself. That window of time, measured across already-confirmed real cases, has a median of 98.5 days between detection and the moment the information becomes public — enough for someone who needs to act (competitive analysis, capital allocation, due diligence) to do so with a real advantage instead of reacting after the fact.
 
 ## System architecture
 
@@ -28,19 +28,19 @@ The only branch that does not return to automatic monitoring is human review: ev
 
 ## Real results
 
-Of 196 real cases audited in BCSentinel's labeling history, 142 are confirmed real institutional formations. Of those, 57 have both a first-signal date and a public-visibility date recorded — enough to measure lead time honestly. 43 of those 57 were detected before the formation became public (true early warning); the other 14 were correctly identified as real formations but only after they were already public, a documented and expected pattern (an operator wallet for an already-public entity, not a founding signal — see `HISTORICAL_VALIDATION.md` for the specific case). Only the 43 genuine early detections feed the table below; no client names, wallets, or case identifiers are shown, only the aggregate distribution:
+BCSentinel's historical library holds 187 addresses audited one by one (185 real investigated cases, plus 2 empty entries from the master key file itself, documented here for transparency). Of the 185, 50 meet the strict bar for measuring real lead time — an exact first on-chain signal date (T1) and an exact public-visibility date (T3), both backed by a verifiable public source: 35 institutional formations and 15 risk events (security incidents, irregular exits). Of those 50, 38 were detected a day or more in advance (true early warning); the other 12 were detected the same day or after the fact was already public — a documented and expected pattern (an operator wallet for an already-public entity, not a founding signal — see `HISTORICAL_VALIDATION.md` for the specific case). Only those 38 feed the table below; no client names, wallets, or case identifiers are shown, only the aggregate distribution:
 
 | Metric (days of lead time) | Value |
 | --- | --- |
-| Median | 23 |
-| 25th percentile | 1 |
-| 75th percentile | 208.5 |
-| Minimum | 0 |
+| Median | 98.5 |
+| 25th percentile | 23.3 |
+| 75th percentile | 400.3 |
+| Minimum | 1 |
 | Maximum | 1,651 |
 
-The **mean** is around **178 days** because a small number of very-early-detected cases (up to 1,651 days ahead) pull it upward; the **median, 23 days**, is the typical lead time for a case. That's why the full distribution is shown here rather than a single number.
+The **mean** is around **285 days** because a small number of very-early-detected cases (up to 1,651 days ahead) pull it upward; the **median, 98.5 days**, is the typical lead time for a case. That's why the full distribution is shown here rather than a single number. Split by type: the median is 98 days for formations (27 of 35 detected early) and 209 days for risk events (11 of 15 detected early).
 
-Named, independently checkable examples of this lead time — Rarible (648 days), Across Protocol (496 days), Synthetix (276 days), Keep3r Network (281 days), Morpho (109 days) — plus cases where the same methodology caught fraud before it became public knowledge, are in [HISTORICAL_VALIDATION.md](HISTORICAL_VALIDATION.md), with the full reproducible methodology.
+Named, independently checkable examples of this lead time — ENS (1,651 days), Safe (826 days), Rarible (646 days), Across Protocol (496 days), Keep3r Network (281 days) — plus cases where the same methodology caught risk before it became public knowledge (for example, Multichain, 843 days ahead of its exploit), are in [HISTORICAL_VALIDATION.md](HISTORICAL_VALIDATION.md), with the full reproducible methodology.
 
 Cases cluster into three distinct speed patterns, each with a different operational implication for whoever receives the alert:
 

@@ -7,9 +7,9 @@
 
 **What BCSentinel is, in one sentence.** An early detection and alert system for crypto entity formation (protocols, DAOs, token launches) from on-chain behavioral patterns, before that formation becomes public. **BCSentinel detects and alerts — it is not investment advice or financial advice, and it does not indicate where or whether to invest.**
 
-**Technical case study →** [CASE_STUDY.md](CASE_STUDY.md): the full five-stage cycle, the design decisions, the challenges solved, and aggregate results across 196 audited historical cases.
+**Technical case study →** [CASE_STUDY.md](CASE_STUDY.md): the full five-stage cycle, the design decisions, the challenges solved, and aggregate results across 187 audited historical cases.
 
-**Historical validation →** [HISTORICAL_VALIDATION.md](HISTORICAL_VALIDATION.md): three retrospective-detection cases with full lead-time math (Rarible, Synthetix, Morpho), plus a case correctly flagged as "not a formation" (The Graph) — every date independently checkable on Etherscan.
+**Historical validation →** [HISTORICAL_VALIDATION.md](HISTORICAL_VALIDATION.md): retrospective-detection cases with full lead-time math (Rarible, Synthetix, Keep3r Network), plus a case correctly flagged as "not a formation" (The Graph) — every date independently checkable on Blockscout or Etherscan.
 
 ---
 
@@ -46,7 +46,7 @@ The system internally documents its own known weak points instead of hiding them
 
 ## 5. Empirical validation
 
-A retrospective backtest on an internal historical dataset of 186 labeled cases showed that the system correctly classifies 49% of cases (92/186) as a real formation, using a transparent methodology that excludes ambiguous cases (no case is classified by inventing data that doesn't exist). This figure describes retrospective behavior on already-known data, not a precision rate statistically validated against future outcomes, nor a commercial success rate confirmed by clients.
+A full audit of BCSentinel's internal case-labeling history (187 addresses, 185 real investigated cases) found 50 cases strictly measurable with an exact date and public source (35 formations, 15 risk events), 19 cases correctly rejected by the system itself, and the rest with partial identification, pending final review, or a detected pattern whose project is not yet identified — see `HISTORICAL_VALIDATION.md` for the full breakdown. Of the 125 cases where the automated Confidence Engine recorded a raw classification before human review, that raw score agreed with the final human-confirmed verdict in only 39% of cases (49/125) — in the other 61%, a human reviewer corrected the engine's initial read, generally in the direction of catching a real formation the automated score had under-rated. This figure is published specifically because it is the evidence for why the system never auto-confirms a finding: the raw automated score alone is wrong more often than it is right, by design treated as a signal for a human to review, not a verdict. This describes retrospective behavior on already-known data, not a precision rate statistically validated against future outcomes, nor a commercial success rate confirmed by clients.
 
 ---
 
